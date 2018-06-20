@@ -1,0 +1,41 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8"/>
+    <title> jeu du carré</title>
+  </head>
+  <body>
+    <audio  preload="auto" loop autoplay>
+  <source src="tetris.mp3" type="audio/mp3" />
+  Votre navigateur n'est pas compatible
+</audio>
+<h1>odd square </h1>
+<div class="flexcont">
+    <form>
+      <label for="seconde">timer</label>
+      <input id="seconde" required min="10" max="40" type="number" value="10"></input>
+      <label for="nombre">dificulté</input>
+      <input id="nombre" required type="number" min="3" max="100" value="3"></input>
+      <div class="flexcont2">
+      <input class="marge" id="go" type="button" value="go" onclick="begin();timer();start()"></input>
+
+    </div>
+    </form>
+    <div id="timer">
+    </div>
+  </div>
+    <span>score:</span>
+    <span id="score"></span>
+
+     <div id="carre" class="flex-container">
+
+     </div>
+<div id="compte">
+
+</div>
+
+
+      <script type="text/javascript" src="jeucarre.js"></script>
+    </body>
+    </html>
